@@ -1,0 +1,48 @@
+Options -Indexes
+ServerSignature Off
+AddDefaultCharset UTF-8
+DefaultLanguage bg
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTP_HOST} ^www\.tehnadzor-ruse\.com$ [NC]
+  RewriteRule ^ https://tehnadzor-ruse.com%{REQUEST_URI} [L,R=301]
+
+  RewriteCond %{HTTP_HOST} ^tehnadzor-ruse\.com$ [NC]
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://tehnadzor-ruse.com%{REQUEST_URI} [L,R=301]
+
+  RewriteRule ^index\.html$ / [R=301,L]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/json "access plus 1 week"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+  <FilesMatch "\.(css|js|jpg|jpeg|png|svg|webp|woff2)$">
+    Header set Cache-Control "public, max-age=2592000, immutable"
+  </FilesMatch>
+</IfModule>

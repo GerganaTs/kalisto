@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Host: tehnadzor-ruse.com
+
+Sitemap: https://tehnadzor-ruse.com/sitemap.xml

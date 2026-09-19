@@ -1,0 +1,25 @@
+{
+  "name": "Технически надзор Русе | КАЛИСТО ЕООД",
+  "short_name": "Технически надзор Русе",
+  "description": "Технически надзор в Русе и цяла България. Лицензирани прегледи на съоръжения с повишена опасност.",
+  "lang": "bg",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
