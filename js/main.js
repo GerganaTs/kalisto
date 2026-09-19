@@ -29,14 +29,14 @@
       Promise.all([
         document.fonts ? document.fonts.ready.catch(() => {}) : Promise.resolve(),
         new Promise((resolve) => {
-          if (document.readyState === "complete") {
+          if (document.readyState !== "loading") {
             resolve();
             return;
           }
-          window.addEventListener("load", resolve, { once: true });
+          document.addEventListener("DOMContentLoaded", resolve, { once: true });
         }),
       ]),
-      new Promise((resolve) => setTimeout(resolve, 2200)),
+      new Promise((resolve) => setTimeout(resolve, 1400)),
     ]).then(hidePreloader);
 
   ready();
