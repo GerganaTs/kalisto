@@ -298,6 +298,7 @@ h2.display {
 }
 
 .email {
+  -webkit-user-select: all;
   user-select: all;
 }
 
@@ -1989,11 +1990,12 @@ a.license:hover h3 {
   bottom: 0;
   z-index: 90;
   background: var(--white);
-  border-top: 1px solid var(--ink);
   padding: 1.15rem var(--pad);
   display: none;
   gap: 1rem;
-  align-items: flex-start;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 
 .cookie.is-visible {
@@ -2017,6 +2019,7 @@ a.license:hover h3 {
   flex-wrap: wrap;
   gap: 0.55rem;
   align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 720px) {
@@ -2025,7 +2028,6 @@ a.license:hover h3 {
     right: 1.25rem;
     bottom: 1.25rem;
     width: min(440px, calc(100% - 2.5rem));
-    border: 1px solid var(--ink);
     grid-template-columns: 1fr;
   }
 }
