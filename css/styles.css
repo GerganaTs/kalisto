@@ -315,6 +315,17 @@ a.email:focus-visible {
   overflow: visible;
 }
 
+@media (max-width: 375px) {
+  .site-header .logo {
+    width: 7.2rem;
+    height: 2.11rem;
+  }
+
+  main:has(.legal) .page-hero h1.display {
+    font-size: 39px;
+  }
+}
+
 .nav {
   display: none;
   align-items: center;
@@ -570,21 +581,6 @@ body.is-nav-open .cookie {
   object-fit: cover;
   object-position: 72% center;
   min-height: 280px;
-}
-
-.hero-figure figcaption {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 0.65rem 0.9rem;
-  background: var(--white);
-  border-top: 1px solid var(--line);
-  border-right: 1px solid var(--line);
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--ink);
 }
 
 /* --------------------------------------------------------------------------
@@ -919,21 +915,6 @@ a.metric:hover b {
   display: block;
 }
 
-.cta-figure figcaption {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 0.65rem 0.9rem;
-  background: var(--white);
-  border-top: 1px solid var(--line);
-  border-right: 1px solid var(--line);
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--ink);
-}
-
 /* --------------------------------------------------------------------------
    Page hero
    -------------------------------------------------------------------------- */
@@ -976,11 +957,10 @@ a.metric:hover b {
 
 .page-hero__plate {
   margin: 0;
-  padding: clamp(1rem, 2.5vw, 2.125rem) clamp(1.35rem, 3vw, 2.5rem) clamp(0.875rem, 2vw, 1.5rem);
+  padding: clamp(1rem, 2.5vw, 2.125rem) clamp(1.35rem, 3vw, 2.5rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 0.5rem;
   background: var(--white);
   border-top: 1px solid var(--line);
 }
@@ -993,21 +973,8 @@ a.metric:hover b {
   display: block;
 }
 
-.page-hero__plate figcaption {
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--dim);
-  line-height: 1.3;
-}
-
 .page-hero__plate--color img {
   object-position: 62% 36%;
-}
-
-.page-hero__plate--color figcaption {
-  color: var(--orange);
 }
 
 .crumbs {
