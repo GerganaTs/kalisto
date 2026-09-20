@@ -19,7 +19,9 @@
   <link rel="canonical" href="https://tehnadzor-ruse.com/">
   <link rel="alternate" hreflang="bg" href="https://tehnadzor-ruse.com/">
   <link rel="alternate" hreflang="x-default" href="https://tehnadzor-ruse.com/">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/logomark-kalisto.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://tehnadzor-ruse.com/sitemap.xml">
@@ -41,12 +43,13 @@
   <meta name="twitter:image" content="https://tehnadzor-ruse.com/assets/og-share.jpg">
   <meta name="twitter:image:alt" content="Инспектор на КАЛИСТО ЕООД на обект за технически надзор">
   <link rel="image_src" href="https://tehnadzor-ruse.com/assets/og-share.jpg">
-  <link rel="preload" href="fonts/sofia-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/sofia-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preload" as="image" href="assets/tehnicheski-nadzor-ruse-web.jpg" fetchpriority="high">
-  <link rel="stylesheet" href="css/styles.css?v=52">
+  <link rel="stylesheet" href="css/styles.css?v=69">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,7 +61,7 @@
         "legalName": "КАЛИСТО ЕООД",
         "alternateName": ["КАЛИСТО", "Технически надзор Русе"],
         "url": "https://tehnadzor-ruse.com/",
-        "logo": "https://tehnadzor-ruse.com/assets/logo.png",
+        "logo": "https://tehnadzor-ruse.com/assets/logo-kalisto.svg",
         "image": "https://tehnadzor-ruse.com/assets/og-share.jpg",
         "description": "Технически надзор Русе. КАЛИСТО ЕООД извършва лицензиран технически надзор на съоръжения с повишена опасност в Русе и на цялата територия на България в обхвата на лицензии № 448 и № 839: котли, съдове под налягане, тръбопроводи, газови съоръжения, повдигателни съоръжения, подемници и асансьори.",
         "telephone": "+359887267778",
@@ -221,10 +224,7 @@
 
   <header class="site-header">
     <div class="shell header-bar">
-      <a class="logo" href="index.html" aria-label="КАЛИСТО ЕООД - начална страница">
-        <span class="logo__name">КАЛИСТО</span>
-        <span class="logo__meta">ЕООД</span>
-      </a>
+      <a class="logo" href="index.html" aria-label="КАЛИСТО ЕООД - начална страница"></a>
       <nav class="nav" aria-label="Основна навигация">
         <a href="index.html" aria-current="page">Начало</a>
         <a href="services.html">Услуги</a>
@@ -513,7 +513,7 @@
             </h3>
             <div class="faq-item__panel" id="faq-a4" role="region" aria-labelledby="faq-q4" aria-hidden="true">
               <div class="faq-item__answer">
-                <p>Обадете се на <a href="tel:+359887267778">0887 267778</a> или пишете на <span class="email">tornadogmbh@abv.bg</span>. Нужни са описание на съоръжението, адрес на обекта и желан срок.</p>
+                <p>Обадете се на <a href="tel:+359887267778">0887 267778</a> или пишете на <a class="email" href="mailto:tornadogmbh@abv.bg">tornadogmbh@abv.bg</a>. Нужни са описание на съоръжението, адрес на обекта и желан срок.</p>
               </div>
             </div>
           </article>
@@ -557,10 +557,7 @@
     <div class="shell">
       <div class="footer-grid">
         <div class="footer-col">
-          <a class="logo" href="index.html">
-            <span class="logo__name">КАЛИСТО</span>
-            <span class="logo__meta">ЕООД</span>
-          </a>
+          <a class="logo" href="index.html" aria-label="КАЛИСТО ЕООД"></a>
           <p>Технически надзор в Русе и на цялата територия на България. Лицензиран контрол на съоръжения с повишена опасност. КАЛИСТО ЕООД.</p>
         </div>
         <div class="footer-col">
@@ -591,26 +588,26 @@
             <span class="icon" aria-hidden="true"><i data-lucide="phone"></i></span>
             0887 267778
           </a>
-          <p class="footer-contact">
+          <a class="footer-contact" href="mailto:tornadogmbh@abv.bg">
             <span class="icon" aria-hidden="true"><i data-lucide="mail"></i></span>
-            <span class="email">tornadogmbh@abv.bg</span>
-          </p>
+            tornadogmbh@abv.bg
+          </a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="year">2026</span> КАЛИСТО ЕООД. All rights reserved</span>
+        <span>© <span id="year">2026</span> КАЛИСТО ЕООД Всички права запазени</span>
         <nav class="footer-legal" aria-label="Правна информация">
           <a href="privacy.html">Поверителност</a>
           <a href="terms.html">Общи условия</a>
+          <a href="cookies.html">Бисквитки</a>
         </nav>
-        <span>ЕИК 117532496</span>
       </div>
       <p class="footer-name" aria-hidden="true">КАЛИСТО</p>
     </div>
   </footer>
 
   <aside class="cookie" id="cookie-banner" hidden role="dialog" aria-labelledby="cookie-title">
-    <p id="cookie-title">Този сайт използва бисквитки за коректна работа и Google Analytics за статистика на посещенията. Подробности има в <a href="privacy.html">Политиката за поверителност</a>.</p>
+    <p id="cookie-title">Този сайт използва бисквитки за коректна работа и Google Analytics за статистика на посещенията. Подробности има в <a href="cookies.html">Политиката за бисквитки</a>.</p>
     <div class="cookie__actions">
       <button class="btn btn--solid" type="button" id="cookie-accept">Съгласен съм</button>
     </div>

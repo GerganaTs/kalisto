@@ -16,7 +16,9 @@
   <link rel="canonical" href="https://tehnadzor-ruse.com/contact.html">
   <link rel="alternate" hreflang="bg" href="https://tehnadzor-ruse.com/contact.html">
   <link rel="alternate" hreflang="x-default" href="https://tehnadzor-ruse.com/contact.html">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/logomark-kalisto.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <meta property="og:type" content="website">
@@ -37,13 +39,14 @@
   <meta name="twitter:image" content="https://tehnadzor-ruse.com/assets/og-share.jpg">
   <meta name="twitter:image:alt" content="Контакти на КАЛИСТО ЕООД в Русе">
   <link rel="image_src" href="https://tehnadzor-ruse.com/assets/og-share.jpg">
-  <link rel="preload" href="fonts/sofia-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/sofia-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://maps.google.com">
   <link rel="preload" as="image" href="assets/tehnicheski-nadzor-ruse-contact-web.jpg" fetchpriority="high">
-  <link rel="stylesheet" href="css/styles.css?v=52">
+  <link rel="stylesheet" href="css/styles.css?v=69">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -113,10 +116,7 @@
 
   <header class="site-header">
     <div class="shell header-bar">
-      <a class="logo" href="index.html" aria-label="КАЛИСТО ЕООД - начална страница">
-        <span class="logo__name">КАЛИСТО</span>
-        <span class="logo__meta">ЕООД</span>
-      </a>
+      <a class="logo" href="index.html" aria-label="КАЛИСТО ЕООД - начална страница"></a>
       <nav class="nav" aria-label="Основна навигация">
         <a href="index.html">Начало</a>
         <a href="services.html">Услуги</a>
@@ -168,7 +168,7 @@
         </article>
         <article class="contact-cell">
           <h2><span class="icon" aria-hidden="true"><i data-lucide="mail"></i></span> Имейл</h2>
-          <p class="big email">tornadogmbh@abv.bg</p>
+          <a class="big email" href="mailto:tornadogmbh@abv.bg">tornadogmbh@abv.bg</a>
           <p>Изпратете описание на съоръжението, локацията и желания срок.</p>
         </article>
         <article class="contact-cell">
@@ -196,10 +196,7 @@
     <div class="shell">
       <div class="footer-grid">
         <div class="footer-col">
-          <a class="logo" href="index.html">
-            <span class="logo__name">КАЛИСТО</span>
-            <span class="logo__meta">ЕООД</span>
-          </a>
+          <a class="logo" href="index.html" aria-label="КАЛИСТО ЕООД"></a>
           <p>Технически надзор в Русе и на цялата територия на България. Лицензиран контрол на съоръжения с повишена опасност. КАЛИСТО ЕООД.</p>
         </div>
         <div class="footer-col">
@@ -230,26 +227,26 @@
             <span class="icon" aria-hidden="true"><i data-lucide="phone"></i></span>
             0887 267778
           </a>
-          <p class="footer-contact">
+          <a class="footer-contact" href="mailto:tornadogmbh@abv.bg">
             <span class="icon" aria-hidden="true"><i data-lucide="mail"></i></span>
-            <span class="email">tornadogmbh@abv.bg</span>
-          </p>
+            tornadogmbh@abv.bg
+          </a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="year">2026</span> КАЛИСТО ЕООД. All rights reserved</span>
+        <span>© <span id="year">2026</span> КАЛИСТО ЕООД Всички права запазени</span>
         <nav class="footer-legal" aria-label="Правна информация">
           <a href="privacy.html">Поверителност</a>
           <a href="terms.html">Общи условия</a>
+          <a href="cookies.html">Бисквитки</a>
         </nav>
-        <span>ЕИК 117532496</span>
       </div>
       <p class="footer-name" aria-hidden="true">КАЛИСТО</p>
     </div>
   </footer>
 
   <aside class="cookie" id="cookie-banner" hidden role="dialog" aria-labelledby="cookie-title">
-    <p id="cookie-title">Този сайт използва бисквитки за коректна работа и Google Analytics за статистика на посещенията. Подробности има в <a href="privacy.html">Политиката за поверителност</a>.</p>
+    <p id="cookie-title">Този сайт използва бисквитки за коректна работа и Google Analytics за статистика на посещенията. Подробности има в <a href="cookies.html">Политиката за бисквитки</a>.</p>
     <div class="cookie__actions">
       <button class="btn btn--solid" type="button" id="cookie-accept">Съгласен съм</button>
     </div>
