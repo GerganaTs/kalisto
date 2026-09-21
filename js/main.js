@@ -145,10 +145,27 @@
   }
 
   const cookieKey = "kalisto-cookie-consent";
+  const gaId = "G-QV3FZSVS33";
   const banner = document.getElementById("cookie-banner");
   const accept = document.getElementById("cookie-accept");
 
-  if (banner && !localStorage.getItem(cookieKey)) {
+  const loadAnalytics = () => {
+    if (window.gtag) return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function gtag() {
+      window.dataLayer.push(arguments);
+    };
+    window.gtag("js", new Date());
+    window.gtag("config", gaId, { anonymize_ip: true });
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=" + gaId;
+    document.head.appendChild(script);
+  };
+
+  if (localStorage.getItem(cookieKey) === "accepted") {
+    loadAnalytics();
+  } else if (banner) {
     banner.classList.add("is-visible");
     banner.hidden = false;
   }
@@ -158,6 +175,7 @@
       localStorage.setItem(cookieKey, "accepted");
       banner.classList.remove("is-visible");
       banner.hidden = true;
+      loadAnalytics();
     });
   }
 
