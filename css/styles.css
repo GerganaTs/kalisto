@@ -1975,13 +1975,14 @@ a.license:hover h3 {
 
 .cookie {
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: auto;
+  right: 1.25rem;
+  bottom: 1.25rem;
   z-index: 90;
+  width: min(440px, calc(100% - 2.5rem));
   background: var(--white);
-  border-top: 1px solid var(--line);
-  box-shadow: 0 -8px 24px rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
   padding: 1.15rem var(--pad);
   display: none;
   gap: 1rem;
@@ -1992,10 +1993,6 @@ a.license:hover h3 {
 
 .cookie.is-visible {
   display: grid;
-}
-
-body:has(.cookie.is-visible) {
-  padding-bottom: 12rem;
 }
 
 .cookie p {
@@ -2018,15 +2015,11 @@ body:has(.cookie.is-visible) {
   justify-content: center;
 }
 
-@media (min-width: 720px) {
+@media (max-width: 719px) {
   .cookie {
-    left: 1.25rem;
-    right: auto;
-    bottom: 1.25rem;
-    width: min(440px, calc(100% - 2.5rem));
-    grid-template-columns: 1fr;
-    border: 1px solid var(--line);
-    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+    right: 0.85rem;
+    bottom: 0.85rem;
+    width: min(440px, calc(100% - 1.7rem));
   }
 }
 

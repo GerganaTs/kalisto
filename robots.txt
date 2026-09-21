@@ -22,6 +22,12 @@ Allow: /
 User-agent: Twitterbot
 Allow: /
 
+User-agent: TikTokBot
+Allow: /
+
+User-agent: ByteDanceSpider
+Allow: /
+
 User-agent: *
 Allow: /
 
