@@ -1,0 +1,7 @@
+osifont-italic.woff2
+Source: https://github.com/hikikomori82/osifont
+License: GNU GPL version 3 with the GPL font exception
+(also offered upstream under GPL-2 and LGPL-3, each with the font exception).
+
+The font exception allows this file to be embedded in the website.
+The site source is not covered by the GPL because of that exception.

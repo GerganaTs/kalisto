@@ -4,83 +4,91 @@
    ========================================================================== */
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
+  font-family: "Osifont";
+  font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/ibm-plex-sans-cyrillic-400-normal.woff2") format("woff2");
+  src: url("../fonts/osifont-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sofia Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/sofia-sans-cyrillic-400-italic.woff2") format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
+  font-family: "Sofia Sans";
+  font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+  src: url("../fonts/sofia-sans-latin-400-italic.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
+  font-family: "Sofia Sans";
+  font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/ibm-plex-sans-latin-ext-400-normal.woff2") format("woff2");
+  src: url("../fonts/sofia-sans-latin-ext-400-italic.woff2") format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
+  font-family: "Sofia Sans";
+  font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/ibm-plex-sans-cyrillic-600-normal.woff2") format("woff2");
+  src: url("../fonts/sofia-sans-cyrillic-600-italic.woff2") format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
+  font-family: "Sofia Sans";
+  font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
+  src: url("../fonts/sofia-sans-latin-600-italic.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
+  font-family: "Sofia Sans";
+  font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/ibm-plex-sans-latin-ext-600-normal.woff2") format("woff2");
+  src: url("../fonts/sofia-sans-latin-ext-600-italic.woff2") format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
+  font-family: "Sofia Sans";
+  font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/ibm-plex-sans-cyrillic-700-normal.woff2") format("woff2");
+  src: url("../fonts/sofia-sans-cyrillic-700-italic.woff2") format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
+  font-family: "Sofia Sans";
+  font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/ibm-plex-sans-latin-700-normal.woff2") format("woff2");
+  src: url("../fonts/sofia-sans-latin-700-italic.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
+  font-family: "Sofia Sans";
+  font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/ibm-plex-sans-latin-ext-700-normal.woff2") format("woff2");
+  src: url("../fonts/sofia-sans-latin-ext-700-italic.woff2") format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -97,7 +105,7 @@
   --max: 1440px;
   --pad: clamp(1.15rem, 2.6vw, 2.5rem);
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
-  --font: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font: "Sofia Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
 *,
@@ -119,7 +127,8 @@ body {
 
 body {
   font-family: var(--font);
-  font-size: 1.125rem;
+  font-style: italic;
+  font-size: 1.1875rem;
   font-weight: 400;
   line-height: 1.65;
   font-synthesis: none;
@@ -141,6 +150,7 @@ a {
 
 button {
   font-family: inherit;
+  font-style: inherit;
 }
 
 ul,
@@ -155,7 +165,7 @@ figure {
 }
 
 address {
-  font-style: normal;
+  font-style: italic;
 }
 
 .skip-link {
@@ -187,13 +197,23 @@ address {
    Type
    -------------------------------------------------------------------------- */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sofia Sans", ui-sans-serif, system-ui, sans-serif;
+  font-style: italic;
+}
+
 h2 {
   line-height: 1;
 }
 
 h3,
 h4 {
-  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  font-size: clamp(1.2625rem, calc(2vw + 1px), 1.6125rem);
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.25;
@@ -204,7 +224,7 @@ h4 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -258,11 +278,11 @@ h4 {
 }
 
 h1.display {
-  font-size: clamp(2.75rem, 8.4vw, 7.25rem);
+  font-size: clamp(2.8125rem, calc(8.4vw + 1px), 7.3125rem);
 }
 
 h2.display {
-  font-size: clamp(2rem, 5vw, 4.25rem);
+  font-size: clamp(2.0625rem, calc(5vw + 1px), 4.3125rem);
   line-height: 1;
 }
 
@@ -278,7 +298,7 @@ h2.display {
 }
 
 .lead {
-  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  font-size: clamp(1.1125rem, calc(1.4vw + 1px), 1.2625rem);
   font-weight: 400;
   line-height: 1.7;
   color: var(--muted);
@@ -307,7 +327,7 @@ h2.display {
   border: 1px solid var(--ink);
   background: transparent;
   color: var(--ink);
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -322,6 +342,11 @@ h2.display {
   height: 1.15rem;
   color: inherit;
   pointer-events: none;
+}
+
+.btn .lucide-phone {
+  transform: scaleX(-1);
+  transform-origin: center;
 }
 
 .btn:hover {
@@ -420,7 +445,7 @@ a.email:focus-visible {
 
 @media (max-width: 375px) {
   main:has(.legal) .page-hero h1.display {
-    font-size: 39px;
+    font-size: 40px;
   }
 }
 
@@ -431,7 +456,8 @@ a.email:focus-visible {
 }
 
 .nav a {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--ink);
@@ -456,11 +482,13 @@ a.email:focus-visible {
   display: inline-flex;
   min-height: 48px;
   padding: 0.55rem 1.1rem;
-  font-size: 0.9375rem;
+  font-size: 1rem;
 }
 
 .btn__label {
   display: inline;
+  position: relative;
+  top: 1px;
 }
 
 .nav-toggle {
@@ -546,7 +574,7 @@ a.email:focus-visible {
   align-items: center;
   gap: 1rem;
   padding: 1.05rem 0;
-  font-size: clamp(1.85rem, 7vw, 3.1rem);
+  font-size: clamp(1.9125rem, calc(7vw + 1px), 3.1625rem);
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1;
@@ -577,7 +605,7 @@ a.email:focus-visible {
 }
 
 .mobile-nav a span {
-  font-size: 0.72rem;
+  font-size: 0.7825rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--orange);
@@ -590,7 +618,7 @@ a.email:focus-visible {
   justify-content: center;
   min-height: 56px;
   padding: 0.9rem 1rem !important;
-  font-size: 1.05rem !important;
+  font-size: 1.1125rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.04em !important;
   text-transform: uppercase !important;
@@ -599,19 +627,38 @@ a.email:focus-visible {
   border: 0 !important;
 }
 
+.mobile-nav a.mobile-nav__phone span {
+  color: var(--white);
+  font-size: inherit;
+  letter-spacing: 0;
+  min-width: 0;
+}
+
 .mobile-nav__phone .icon {
-  width: 1.15rem;
-  height: 1.15rem;
-  min-width: 1.15rem;
-  color: inherit;
+  width: 1.35rem;
+  height: 1.35rem;
+  min-width: 1.35rem;
+  color: var(--white);
   font-size: inherit;
   letter-spacing: 0;
   line-height: 0;
 }
 
+.mobile-nav__phone .icon svg {
+  fill: currentColor;
+  stroke: none;
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+
 .mobile-nav__phone:hover {
   background: var(--white) !important;
   color: var(--ink) !important;
+}
+
+.mobile-nav a.mobile-nav__phone:hover span,
+.mobile-nav__phone:hover .icon {
+  color: var(--ink);
 }
 
 @media (orientation: landscape) and (max-height: 520px) {
@@ -628,7 +675,7 @@ a.email:focus-visible {
 
   .mobile-nav a {
     padding: 0.55rem 0;
-    font-size: clamp(1.2rem, 6.2vh, 1.85rem);
+    font-size: clamp(1.2625rem, calc(6.2vh + 1px), 1.9125rem);
   }
 
   .mobile-nav__phone {
@@ -732,7 +779,7 @@ a.metric:hover b {
 
 .metric b {
   display: block;
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-size: clamp(1.2125rem, calc(2vw + 1px), 1.5125rem);
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.2;
@@ -740,7 +787,7 @@ a.metric:hover b {
 }
 
 .metric > span:not(.icon) {
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
   color: var(--dim);
   line-height: 1.45;
 }
@@ -774,11 +821,17 @@ a.metric:hover b {
   flex-direction: column;
   width: 100%;
   gap: 0.5rem;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--ink);
+}
+
+.intro-copy .lead {
+  font-size: 1.1875rem;
+  line-height: 1.65;
+  letter-spacing: 0;
 }
 
 .section-head {
@@ -941,14 +994,14 @@ a.metric:hover b {
 }
 
 .folio-item__n {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--orange);
 }
 
 .folio-item h3 {
-  font-size: clamp(1.55rem, 2.6vw, 2.15rem);
+  font-size: clamp(1.6125rem, calc(2.6vw + 1px), 2.2125rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.12;
@@ -956,12 +1009,12 @@ a.metric:hover b {
 }
 
 .folio-item--feature h3 {
-  font-size: clamp(1.85rem, 3.2vw, 2.55rem);
+  font-size: clamp(1.9125rem, calc(3.2vw + 1px), 2.6125rem);
 }
 
 .folio-item p {
   color: var(--muted);
-  font-size: 1.05rem;
+  font-size: 1.1125rem;
   line-height: 1.6;
   max-width: 38rem;
 }
@@ -1005,7 +1058,7 @@ a.metric:hover b {
   }
 
   .folio-item--feature h3 {
-    font-size: clamp(1.55rem, 2.6vw, 2.15rem);
+    font-size: clamp(1.6125rem, calc(2.6vw + 1px), 2.2125rem);
   }
 }
 
@@ -1026,6 +1079,10 @@ a.metric:hover b {
   padding: clamp(2.4rem, 6vw, 5rem) var(--pad);
   display: grid;
   gap: 1rem;
+}
+
+.cta .lead {
+  font-size: 1.1875rem;
 }
 
 .cta-figure {
@@ -1108,7 +1165,7 @@ a.metric:hover b {
 }
 
 .crumbs {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1137,7 +1194,7 @@ a.metric:hover b {
 .folio-row__index {
   padding: 2.1rem var(--pad) 0;
   padding-right: calc(var(--pad) + 0.5rem);
-  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-size: clamp(2.4625rem, calc(6vw + 1px), 4.5625rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 0.85;
@@ -1160,7 +1217,7 @@ a.metric:hover b {
 }
 
 .folio-row__copy h2 {
-  font-size: clamp(1.7rem, 3.2vw, 2.5rem);
+  font-size: clamp(1.7625rem, calc(3.2vw + 1px), 2.5625rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1;
@@ -1188,8 +1245,8 @@ a.metric:hover b {
   display: flex;
   align-items: flex-start;
   gap: 0.55rem;
-  color: var(--ink);
-  font-size: 1.125rem;
+  color: #334155;
+  font-size: 1.1875rem;
 }
 
 .folio-row__copy li::before {
@@ -1204,6 +1261,7 @@ a.metric:hover b {
 }
 
 .folio-row__media {
+  position: relative;
   min-height: 240px;
   overflow: hidden;
   background: var(--fog);
@@ -1215,6 +1273,75 @@ a.metric:hover b {
   object-fit: cover;
   min-height: 240px;
 }
+
+.folio-carousel {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+}
+
+.folio-carousel__viewport {
+  overflow: hidden;
+  height: 100%;
+  min-height: inherit;
+}
+
+.folio-carousel__track {
+  display: flex;
+  height: 100%;
+  min-height: inherit;
+}
+
+.folio-carousel__slide {
+  flex: 0 0 100%;
+  height: 100%;
+  min-height: inherit;
+  background: var(--fog);
+}
+
+.folio-carousel__slide img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.folio-carousel__btn {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--ink);
+  color: var(--white);
+  cursor: pointer;
+  box-shadow: inset 0 3px 0 var(--orange);
+}
+
+.folio-carousel__btn svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.folio-carousel__btn:hover,
+.folio-carousel__btn:focus-visible {
+  background: var(--orange);
+  color: var(--ink);
+  box-shadow: none;
+}
+
+.folio-carousel__btn--prev { left: 0; }
+.folio-carousel__btn--next { right: 0; }
+
 
 /* --------------------------------------------------------------------------
    About
@@ -1237,7 +1364,7 @@ a.metric:hover b {
 
 .sheet__main h2,
 .sheet__side h3 {
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-size: clamp(1.4625rem, calc(2.5vw + 1px), 2.0625rem);
   font-weight: 700;
   letter-spacing: -0.0175em;
   margin: 0.4rem 0 1rem;
@@ -1247,7 +1374,7 @@ a.metric:hover b {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   line-height: 1;
@@ -1290,14 +1417,14 @@ a.metric:hover b {
 
 .license__n {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   letter-spacing: -0.02em;
   line-height: 1;
   color: var(--orange);
 }
 
 .license h3 {
-  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-size: clamp(1.2125rem, calc(1.8vw + 1px), 1.4625rem);
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.25;
@@ -1306,7 +1433,7 @@ a.metric:hover b {
 
 .license p {
   color: var(--dim);
-  font-size: 0.95rem;
+  font-size: 1.0125rem;
   margin-top: 0.15rem;
 }
 
@@ -1341,7 +1468,7 @@ a.license:hover h3 {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   line-height: 1;
@@ -1358,7 +1485,7 @@ a.license:hover h3 {
 
 .contact-cell .big {
   display: block;
-  font-size: clamp(1.6rem, 4vw, 3.1rem);
+  font-size: clamp(1.6625rem, calc(4vw + 1px), 3.1625rem);
   font-weight: 700;
   letter-spacing: -0.0225em;
   line-height: 1.05;
@@ -1386,7 +1513,7 @@ a.license:hover h3 {
 }
 
 .legal-line {
-  font-size: 0.9rem;
+  font-size: 0.9625rem;
   color: var(--dim);
 }
 
@@ -1426,7 +1553,7 @@ a.license:hover h3 {
 }
 
 .footer-col h3 {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   line-height: 1;
@@ -1440,7 +1567,7 @@ a.license:hover h3 {
   display: block;
   color: var(--muted);
   margin-bottom: 0.4rem;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-weight: 400;
   font-family: inherit;
   letter-spacing: 0;
@@ -1514,7 +1641,7 @@ a.license:hover h3 {
   justify-content: space-between;
   align-items: center;
   padding: 1rem var(--pad);
-  font-size: 0.8rem;
+  font-size: 0.8625rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -1536,7 +1663,7 @@ a.license:hover h3 {
   align-items: center;
   gap: 0.5rem;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
@@ -1570,7 +1697,7 @@ a.license:hover h3 {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1rem;
-    font-size: 1rem;
+    font-size: 1.0625rem;
     font-weight: 400;
     letter-spacing: 0;
     text-transform: none;
@@ -1592,7 +1719,7 @@ a.license:hover h3 {
 }
 
 .footer-name {
-  font-size: clamp(3rem, 16vw, 11rem);
+  font-size: clamp(3.0625rem, calc(16vw + 1px), 11.0625rem);
   font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 0.8;
@@ -1843,7 +1970,11 @@ a.license:hover h3 {
   }
 
   .folio-row__media,
-  .folio-row__media img {
+  .folio-row__media img,
+  .folio-carousel,
+  .folio-carousel__viewport,
+  .folio-carousel__track,
+  .folio-carousel__slide {
     min-height: 100%;
     height: 100%;
   }
@@ -1979,7 +2110,7 @@ a.license:hover h3 {
   background: transparent;
   color: var(--ink);
   font-family: inherit;
-  font-size: clamp(1.2rem, 1.9vw, 1.5rem);
+  font-size: clamp(1.2625rem, calc(1.9vw + 1px), 1.5625rem);
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.28;
@@ -2057,7 +2188,7 @@ a.license:hover h3 {
   color: var(--muted);
   max-width: 40rem;
   padding: 0.15rem 3.25rem 1.85rem 0;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   line-height: 1.7;
   opacity: 0;
   transform: translateY(0.45rem);
@@ -2111,7 +2242,7 @@ a.license:hover h3 {
 
 .map-note {
   padding: 0.9rem var(--pad);
-  font-size: 0.95rem;
+  font-size: 1.0125rem;
   color: var(--muted);
   background: var(--white);
   border-top: 1px solid var(--line);
@@ -2132,7 +2263,7 @@ a.license:hover h3 {
 }
 
 .legal h2 {
-  font-size: clamp(1.3rem, 2.2vw, 1.65rem);
+  font-size: clamp(1.3625rem, calc(2.2vw + 1px), 1.7125rem);
   font-weight: 700;
   letter-spacing: -0.0125em;
   line-height: 1;
@@ -2141,7 +2272,7 @@ a.license:hover h3 {
 }
 
 .legal h3 {
-  font-size: 1.15rem;
+  font-size: 1.2125rem;
   font-weight: 700;
   letter-spacing: -0.0075em;
   margin: 1.35rem 0 0.45rem;
@@ -2174,7 +2305,7 @@ a.license:hover h3 {
 .legal-table table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.95rem;
+  font-size: 1.0125rem;
 }
 
 .legal-table th,
@@ -2227,7 +2358,7 @@ a.license:hover h3 {
 }
 
 .cookie p {
-  font-size: 0.95rem;
+  font-size: 1.0125rem;
   line-height: 1.55;
   color: var(--ink);
   max-width: 40rem;
@@ -2334,7 +2465,7 @@ html.is-loading {
 
 .preloader__brand {
   font-weight: 700;
-  font-size: 0.78rem;
+  font-size: 0.8425rem;
   letter-spacing: 0.17em;
   line-height: 1;
 }
@@ -2439,7 +2570,7 @@ html.is-loading {
   padding: 0.35rem 0.7rem;
   border: 1px solid var(--orange);
   color: var(--orange);
-  font-size: 0.72rem;
+  font-size: 0.7825rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   line-height: 1;
@@ -2458,7 +2589,7 @@ html.is-loading {
 }
 
 .permit__id {
-  font-size: clamp(1.7rem, 3.4vw, 2.55rem);
+  font-size: clamp(1.7625rem, calc(3.4vw + 1px), 2.6125rem);
   font-weight: 700;
   letter-spacing: -0.0225em;
   line-height: 1.12;
@@ -2483,7 +2614,7 @@ html.is-loading {
   align-items: center;
   gap: 0.85rem;
   margin-bottom: 0.45rem;
-  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-size: clamp(1.2125rem, calc(1.8vw + 1px), 1.4625rem);
   font-weight: 700;
   letter-spacing: -0.01em;
   text-transform: none;
@@ -2517,7 +2648,7 @@ html.is-loading {
 }
 
 .permit-list b {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   color: #767c89;

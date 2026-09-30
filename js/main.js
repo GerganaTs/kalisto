@@ -238,4 +238,155 @@
   } else {
     play();
   }
+
+  document.querySelectorAll(".folio-carousel").forEach((root) => {
+    const track = root.querySelector(".folio-carousel__track");
+    const viewport = root.querySelector(".folio-carousel__viewport");
+    const originals = [...root.querySelectorAll(".folio-carousel__slide")];
+    if (!track || !viewport || originals.length < 2) return;
+
+    const count = originals.length;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const cloneSlide = (slide) => {
+      const clone = slide.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      clone.querySelectorAll("img").forEach((img) => img.setAttribute("alt", ""));
+      return clone;
+    };
+    track.insertBefore(cloneSlide(originals[count - 1]), originals[0]);
+    track.appendChild(cloneSlide(originals[0]));
+
+    let index = 1;
+    let timer = 0;
+    let busy = false;
+    let queued = 0;
+    let moveId = 0;
+    let failSafe = 0;
+    let inView = false;
+
+    const apply = (animate) => {
+      const width = viewport.clientWidth;
+      [...track.children].forEach((slide) => {
+        slide.style.flexBasis = width + "px";
+      });
+      track.style.transition = animate ? "transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)" : "none";
+      track.style.transform = "translate3d(" + Math.round(-index * width) + "px, 0, 0)";
+    };
+
+    const parkClone = () => {
+      if (index === count + 1) index = 1;
+      else if (index === 0) index = count;
+      else return false;
+      apply(false);
+      return true;
+    };
+
+    const finish = (id) => {
+      if (!busy || id !== moveId) return;
+      window.clearTimeout(failSafe);
+      busy = false;
+      parkClone();
+      if (!queued) return;
+      const dir = queued;
+      queued = 0;
+      go(dir);
+    };
+
+    const go = (dir) => {
+      if (busy) {
+        queued = dir;
+        return;
+      }
+      if (reduceMotion) {
+        index += dir;
+        if (index > count) index = 1;
+        if (index < 1) index = count;
+        apply(false);
+        return;
+      }
+      index += dir;
+      busy = true;
+      moveId += 1;
+      apply(true);
+      const id = moveId;
+      window.clearTimeout(failSafe);
+      failSafe = window.setTimeout(() => finish(id), 520);
+    };
+
+    track.addEventListener("transitionend", (event) => {
+      if (event.target !== track || event.propertyName !== "transform") return;
+      finish(moveId);
+    });
+
+    const stop = () => {
+      window.clearInterval(timer);
+      timer = 0;
+    };
+
+    const start = () => {
+      if (reduceMotion || timer || !inView || document.hidden) return;
+      timer = window.setInterval(() => go(1), 4000);
+    };
+
+    root.querySelectorAll(".folio-carousel__btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        go(Number(button.getAttribute("data-dir")));
+        stop();
+        start();
+      });
+    });
+
+    root.addEventListener("pointerenter", (event) => {
+      if (event.pointerType === "touch") return;
+      stop();
+    });
+    root.addEventListener("pointerleave", (event) => {
+      if (event.pointerType === "touch") return;
+      start();
+    });
+    root.addEventListener("focusin", stop);
+    root.addEventListener("focusout", (event) => {
+      if (!root.contains(event.relatedTarget)) start();
+    });
+
+    let startX = 0;
+    root.addEventListener("pointerdown", (event) => {
+      if (event.target.closest("button")) return;
+      startX = event.clientX;
+      stop();
+    });
+    root.addEventListener("pointerup", (event) => {
+      if (event.target.closest("button")) return;
+      const delta = event.clientX - startX;
+      if (Math.abs(delta) > 40) go(delta < 0 ? 1 : -1);
+      start();
+    });
+
+    window.addEventListener("resize", () => {
+      window.clearTimeout(failSafe);
+      busy = false;
+      queued = 0;
+      moveId += 1;
+      parkClone();
+      apply(false);
+    });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stop();
+      else start();
+    });
+
+    const section = root.closest(".folio-row") || root;
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      const bounds = entry.rootBounds;
+      const viewportH = bounds && bounds.height ? bounds.height : window.innerHeight;
+      const cover = viewportH > 0 ? entry.intersectionRect.height / viewportH : 0;
+      inView = entry.intersectionRatio >= 0.7 || cover >= 0.7;
+      if (inView) start();
+      else stop();
+    }, { threshold: [0, 0.25, 0.5, 0.7, 0.85, 1] });
+    observer.observe(section);
+
+    apply(false);
+  });
 })();

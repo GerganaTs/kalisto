@@ -44,7 +44,7 @@
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preload" as="image" href="assets/tehnicheski-nadzor-licenzi-info.jpg" fetchpriority="high">
-  <link rel="stylesheet" href="css/styles.css?v=88">
+  <link rel="stylesheet" href="css/styles.css?v=104">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -128,7 +128,7 @@
         <a href="about.html"><span>03</span>За нас</a>
         <a href="licenses.html"><span>04</span>Лицензи</a>
         <a href="contact.html"><span>05</span>Контакти</a>
-        <a class="mobile-nav__phone" href="tel:+359887267778"><span class="icon" aria-hidden="true"><i data-lucide="phone"></i></span>0887 267778</a>
+        <a class="mobile-nav__phone" href="tel:+359887267778"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span><span class="btn__label">0887 267778</span></a>
       </div>
     </nav>
 
@@ -160,14 +160,26 @@
         </ul>
       </div>
       <div class="folio-row__media">
-        <img src="assets/tehnicheski-nadzor-asansiori-ruse-web.jpg" alt="Асансьорна кабина при технически надзор на асансьори от КАЛИСТО ЕООД в Русе" width="1600" height="873" loading="lazy" decoding="async">
+        <div class="folio-carousel" aria-label="Снимки: асансьори">
+          <div class="folio-carousel__viewport">
+            <div class="folio-carousel__track">
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-patnicheski-asansiori-ruse.webp" alt="Пътнически асансьори в сграда при технически надзор от КАЛИСТО ЕООД" width="365" height="547" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-domashen-asansior-ruse.webp" alt="Домашен асансьор в жилищна сграда при технически надзор от КАЛИСТО ЕООД" width="536" height="571" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-asansior-v-zhilishtna-sgrada.webp" alt="Асансьор с решетъчна шахта в жилищна сграда" width="547" height="365" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-komanden-panel-na-asansior.webp" alt="Команден панел на пътнически асансьор" width="655" height="402" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-avtomobilen-asansior.webp" alt="Двуетажен автомобилен асансьор за паркиране" width="738" height="375" loading="lazy" decoding="async"></div>
+            </div>
+          </div>
+          <button type="button" class="folio-carousel__btn folio-carousel__btn--prev" data-dir="-1" aria-label="Предишна снимка"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M20.4 7.2 9.6 16l10.8 8.8v-6.2H24v-5.2h-3.6V7.2z"/></svg></button>
+          <button type="button" class="folio-carousel__btn folio-carousel__btn--next" data-dir="1" aria-label="Следваща снимка"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M11.6 7.2 22.4 16 11.6 24.8v-6.2H8v-5.2h3.6V7.2z"/></svg></button>
+        </div>
       </div>
     </article>
 
     <article class="folio-row folio-row--flip shell" id="povdigatelni">
       <p class="folio-row__index">02</p>
       <div class="folio-row__copy">
-        <p class="meta"><span class="pictogram" aria-hidden="true"><svg viewBox="0 0 32 32" fill="currentColor"><rect x="8.6" y="28.1" width="14.8" height="2.4"/><rect x="14.2" y="10.2" width="3.6" height="18"/><rect x="12.4" y="6.4" width="7.2" height="4.4"/><rect x="2.4" y="6.4" width="27.2" height="2.4"/><rect x="2.4" y="4.2" width="7.6" height="4.6"/><rect x="23.2" y="8.8" width="3.2" height="2.2"/><rect x="24.2" y="10.8" width="1.2" height="8.6"/><path d="M22.6 19.2h4.4v1.15c0 1.85-1.45 3.35-3.3 3.35s-3.3-1.5-3.3-3.35h1.45c0 1.05.8 1.9 1.85 1.9s1.85-.85 1.85-1.9V20.4h-2.95V19.2z"/></svg></span> Повдигателни съоръжения</p>
+        <p class="meta"><span class="pictogram" aria-hidden="true"><svg viewBox="0 0 32 32" fill="currentColor"><rect x="12.6" y="27.2" width="6.8" height="2.4"/><rect x="14.6" y="8.4" width="2.8" height="18.8"/><rect x="15.4" y="11.2" width="1.2" height="2.2" fill="#fff"/><rect x="15.4" y="15.6" width="1.2" height="2.2" fill="#fff"/><rect x="15.4" y="20" width="1.2" height="2.2" fill="#fff"/><rect x="15.4" y="24.4" width="1.2" height="2.2" fill="#fff"/><rect x="1.2" y="5" width="29.6" height="2.6"/><rect x="1.2" y="5" width="6" height="6"/><rect x="13.2" y="7.6" width="5.6" height="3.6"/><rect x="23.4" y="7.6" width="1.2" height="8.4"/><path d="M21.8 15.8h4.6v1.2c0 1.6-1.25 2.9-2.85 2.9s-2.85-1.3-2.85-2.9h1.3c0 .9.7 1.6 1.55 1.6s1.55-.7 1.55-1.6v-.4h-3.3v-1.2z"/></svg></span> Повдигателни съоръжения</p>
         <h2>Надзор на повдигателни съоръжения</h2>
         <p>Технически надзор на товароподемни кранове, телфери, колички, товарозахващащи органи и приспособления, работни площадки и мостови кранове с управление от пода - в границите на т. 2.6.1-2.6.13 от лицензия № 448.</p>
         <ul>
@@ -177,14 +189,30 @@
         </ul>
       </div>
       <div class="folio-row__media">
-        <img src="assets/tehnicheski-nadzor-za-povdigashti-mehanizmi-web.jpg" alt="Кран и повдигателни съоръжения при технически надзор от КАЛИСТО ЕООД" width="1600" height="892" loading="lazy" decoding="async">
+        <div class="folio-carousel" aria-label="Снимки: повдигателни съоръжения">
+          <div class="folio-carousel__viewport">
+            <div class="folio-carousel__track">
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-avtovishka-na-obekt.webp" alt="Автовишка с работна платформа на строителен обект" width="381" height="524" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-povdigatelni-platformi-na-obekt.webp" alt="Ножични и телескопични повдигателни платформи на строеж" width="579" height="530" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-avtovishka-s-platforma.webp" alt="Шарнирна автовишка с работна платформа" width="659" height="466" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-rabotni-platformi.webp" alt="Работни площадки и повдигателни платформи" width="686" height="446" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-nozhnichna-platforma.webp" alt="Ножична повдигателна платформа" width="554" height="554" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-avtokran-s-rabotna-platforma.webp" alt="Автокран с работна платформа при технически надзор" width="365" height="547" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-avtokran-s-hidravlichna-strela.webp" alt="Камион с хидравличен кран" width="387" height="516" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-kulov-kran.webp" alt="Кулов кран на строителен обект" width="335" height="597" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-kulov-kran-s-strela.webp" alt="Кулов кран с дълга стрела" width="678" height="452" loading="lazy" decoding="async"></div>
+            </div>
+          </div>
+          <button type="button" class="folio-carousel__btn folio-carousel__btn--prev" data-dir="-1" aria-label="Предишна снимка"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M20.4 7.2 9.6 16l10.8 8.8v-6.2H24v-5.2h-3.6V7.2z"/></svg></button>
+          <button type="button" class="folio-carousel__btn folio-carousel__btn--next" data-dir="1" aria-label="Следваща снимка"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M11.6 7.2 22.4 16 11.6 24.8v-6.2H8v-5.2h3.6V7.2z"/></svg></button>
+        </div>
       </div>
     </article>
 
     <article class="folio-row shell" id="podemnici">
       <p class="folio-row__index">03</p>
       <div class="folio-row__copy">
-        <p class="meta"><span class="pictogram" aria-hidden="true"><svg viewBox="0 0 32 32" fill="currentColor"><polygon points="12.5,1.2 15.6,5.2 9.4,5.2"/><polygon points="19.5,1.2 22.6,5.2 16.4,5.2"/><polygon points="12.5,10.4 9.4,6.4 15.6,6.4"/><polygon points="19.5,10.4 16.4,6.4 22.6,6.4"/><rect x="3.2" y="11.2" width="25.6" height="18.4" rx="2.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9.4" cy="17.4" r="2"/><path d="M6.4 27.2v-5.2c0-1.7 1.3-3 3-3h0c1.7 0 3 1.3 3 3v5.2z"/><circle cx="16" cy="17.4" r="2"/><path d="M13 27.2v-5.2c0-1.7 1.3-3 3-3h0c1.7 0 3 1.3 3 3v5.2z"/><circle cx="22.6" cy="17.4" r="2"/><path d="M19.6 27.2v-5.2c0-1.7 1.3-3 3-3h0c1.7 0 3 1.3 3 3v5.2z"/></svg></span> Подемници</p>
+        <p class="meta"><span class="pictogram" aria-hidden="true"><svg viewBox="0 0 32 32" fill="currentColor"><rect x="5.2" y="3.4" width="21.6" height="2.8"/><polygon points="7.2,8.6 10.2,8.6 24.8,21.8 21.8,21.8"/><polygon points="21.8,8.6 24.8,8.6 10.2,21.8 7.2,21.8"/><rect x="4" y="22.8" width="24" height="2.6"/><rect x="5.2" y="25.4" width="4.8" height="3.2"/><rect x="22" y="25.4" width="4.8" height="3.2"/></svg></span> Подемници</p>
         <h2>Строителни и жилищни подемници</h2>
         <p>Технически надзор на строителни подемници за повдигане на хора или на хора и товари, независимо от вида на строежа, както и на други подемници за хора или хора и товари в жилищни сгради - т. 2.6.8 от лицензия № 839.</p>
         <ul>
@@ -194,7 +222,16 @@
         </ul>
       </div>
       <div class="folio-row__media">
-        <img src="assets/tehnicheski-nadzor-na-stroitelni-i-jilishtni-podemnici-web.jpg" alt="Строителен и жилищен подемник при технически надзор от КАЛИСТО ЕООД" width="1600" height="892" loading="lazy" decoding="async">
+        <div class="folio-carousel" aria-label="Снимки: подемници">
+          <div class="folio-carousel__viewport">
+            <div class="folio-carousel__track">
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-stroitelni-podemnici.webp" alt="Строителен подемник за хора и товари на обект" width="499" height="375" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-tovaren-podemnik.webp" alt="Товарни подемници с платформа" width="447" height="447" loading="lazy" decoding="async"></div>
+            </div>
+          </div>
+          <button type="button" class="folio-carousel__btn folio-carousel__btn--prev" data-dir="-1" aria-label="Предишна снимка"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M20.4 7.2 9.6 16l10.8 8.8v-6.2H24v-5.2h-3.6V7.2z"/></svg></button>
+          <button type="button" class="folio-carousel__btn folio-carousel__btn--next" data-dir="1" aria-label="Следваща снимка"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M11.6 7.2 22.4 16 11.6 24.8v-6.2H8v-5.2h3.6V7.2z"/></svg></button>
+        </div>
       </div>
     </article>
 
@@ -228,7 +265,18 @@
         </ul>
       </div>
       <div class="folio-row__media">
-        <img src="assets/tehnicheski-nadzor-na-gazovi-instalacii-web.jpg" alt="Газова инсталация при технически надзор от КАЛИСТО ЕООД" width="1600" height="900" loading="lazy" decoding="async">
+        <div class="folio-carousel" aria-label="Снимки: газови инсталации">
+          <div class="folio-carousel__viewport">
+            <div class="folio-carousel__track">
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-gazoregulatorna-instalacia.webp" alt="Газорегулаторна инсталация с манометри и спирателни кранове" width="638" height="480" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-gazovi-kotli-ruse.webp" alt="Стенни газови котли и инсталация при технически надзор от КАЛИСТО ЕООД" width="554" height="554" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-stenen-gazov-kotel.webp" alt="Стенен газов котел с тръбна инсталация" width="600" height="400" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-bitov-gazov-kotel.webp" alt="Битов стенен газов котел" width="515" height="388" loading="lazy" decoding="async"></div>
+            </div>
+          </div>
+          <button type="button" class="folio-carousel__btn folio-carousel__btn--prev" data-dir="-1" aria-label="Предишна снимка"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M20.4 7.2 9.6 16l10.8 8.8v-6.2H24v-5.2h-3.6V7.2z"/></svg></button>
+          <button type="button" class="folio-carousel__btn folio-carousel__btn--next" data-dir="1" aria-label="Следваща снимка"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M11.6 7.2 22.4 16 11.6 24.8v-6.2H8v-5.2h3.6V7.2z"/></svg></button>
+        </div>
       </div>
     </article>
 
@@ -245,7 +293,20 @@
         </ul>
       </div>
       <div class="folio-row__media">
-        <img src="assets/tehnicheski-nadzor-na-parni-kotli-web.jpg" alt="Парни котли при технически надзор от КАЛИСТО ЕООД" width="1600" height="900" loading="lazy" decoding="async">
+        <div class="folio-carousel" aria-label="Снимки: парни и водогрейни котли">
+          <div class="folio-carousel__viewport">
+            <div class="folio-carousel__track">
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-gazovi-kotli-ruse.webp" alt="Стенни газови котли и инсталация при технически надзор от КАЛИСТО ЕООД" width="554" height="554" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-stenen-gazov-kotel.webp" alt="Стенен газов котел с тръбна инсталация" width="600" height="400" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-bitov-gazov-kotel.webp" alt="Битов стенен газов котел" width="515" height="388" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-paren-kotel-s-manometar.webp" alt="Парен котел с манометър и предпазна арматура" width="266" height="477" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/tehnicheski-nadzor-horizontalen-paren-kotel.webp" alt="Хоризонтален парен котел с горелка" width="600" height="400" loading="lazy" decoding="async"></div>
+              <div class="folio-carousel__slide"><img src="assets/shema-na-paren-kotel.webp" alt="Схема на парен котел с предпазен клапан и захранващи помпи" width="738" height="414" loading="lazy" decoding="async"></div>
+            </div>
+          </div>
+          <button type="button" class="folio-carousel__btn folio-carousel__btn--prev" data-dir="-1" aria-label="Предишна снимка"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M20.4 7.2 9.6 16l10.8 8.8v-6.2H24v-5.2h-3.6V7.2z"/></svg></button>
+          <button type="button" class="folio-carousel__btn folio-carousel__btn--next" data-dir="1" aria-label="Следваща снимка"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M11.6 7.2 22.4 16 11.6 24.8v-6.2H8v-5.2h3.6V7.2z"/></svg></button>
+        </div>
       </div>
     </article>
 
@@ -262,7 +323,7 @@
         </ul>
       </div>
       <div class="folio-row__media">
-        <img src="assets/tehnicheski-nadzor-na-traboprovodi-za-para.jpeg" alt="Тръбопроводи за пара и гореща вода при технически надзор от КАЛИСТО ЕООД" width="1600" height="893" loading="lazy" decoding="async">
+        <img src="assets/tehnicheski-nadzor-promishlen-paren-kotel.webp" alt="Промишлен парен котел с горелка" width="515" height="388" loading="lazy" decoding="async">
       </div>
     </article>
 
@@ -277,7 +338,7 @@
           </div>
         </div>
         <figure class="cta-figure">
-          <img src="assets/cta-image-web.jpg" alt="Шахта на асансьор по време на технически преглед от КАЛИСТО ЕООД" width="1400" height="1400" loading="lazy" decoding="async">
+          <img src="assets/tehnicheski-nadzor-domashen-asansior-ruse.webp" alt="Домашен асансьор в жилищна сграда при технически надзор от КАЛИСТО ЕООД" width="536" height="571" loading="lazy" decoding="async">
         </figure>
       </div>
     </section>
@@ -301,8 +362,8 @@
         <div class="footer-col">
           <h3>Услуги</h3>
           <a href="services.html#asansiori"><span class="icon" aria-hidden="true"><i data-lucide="arrow-up-down"></i></span>Асансьори</a>
-          <a href="services.html#povdigatelni"><span class="icon" aria-hidden="true"><i data-lucide="forklift"></i></span>Повдигателни съоръжения</a>
-          <a href="services.html#podemnici"><span class="icon" aria-hidden="true"><i data-lucide="arrow-up-from-line"></i></span>Подемници</a>
+          <a href="services.html#povdigatelni"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="miter"><path d="M1.8 6.2H22"/><path d="M8 6.2V20.5"/><path d="M5 20.5h6"/><path d="M1.8 6.2v3.4H5"/><path d="M16.2 6.2v5.6"/><path d="M14.4 11.8h3.6v1.1a1.8 1.8 0 1 1-3.6 0z"/></svg></span>Повдигателни съоръжения</a>
+          <a href="services.html#podemnici"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="miter"><path d="M3.5 5.2h17"/><path d="M6 8 18 15.6"/><path d="M18 8 6 15.6"/><path d="M3 16.8h18"/><path d="M5 16.8v2.6h3.2V16.8"/><path d="M15.8 16.8v2.6H19V16.8"/></svg></span>Подемници</a>
           <a href="services.html#sadove"><span class="icon" aria-hidden="true"><i data-lucide="cylinder"></i></span>Съдове под налягане</a>
           <a href="services.html#gazovi"><span class="icon" aria-hidden="true"><i data-lucide="flame"></i></span>Газови инсталации</a>
           <a href="services.html#kotli"><span class="icon" aria-hidden="true"><i data-lucide="thermometer"></i></span>Котли</a>
@@ -346,6 +407,6 @@
   <script defer src="https://unpkg.com/lucide@latest"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-  <script defer src="js/main.js?v=17"></script>
+  <script defer src="js/main.js?v=22"></script>
 </body>
 </html>
