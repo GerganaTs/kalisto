@@ -1386,6 +1386,18 @@ a.metric:hover b {
   background: var(--fog);
 }
 
+.sheet__side .sheet__people h3 {
+  margin: 0;
+}
+
+.sheet__side .sheet__people h3 + h3 {
+  margin-top: 0.35rem;
+}
+
+.sheet__people {
+  margin: 0.35rem 0 1rem;
+}
+
 .sheet .metrics-row {
   border-bottom: 0;
 }
