@@ -279,11 +279,13 @@ h4 {
 
 h1.display {
   font-size: clamp(2.8125rem, calc(8.4vw + 1px), 7.3125rem);
+  letter-spacing: -0.02em;
 }
 
 h2.display {
   font-size: clamp(2.0625rem, calc(5vw + 1px), 4.3125rem);
   line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 @media (max-width: 979px) {
